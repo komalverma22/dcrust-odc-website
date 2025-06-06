@@ -1,0 +1,126 @@
+.social-links-contact {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  /* margin-top: 2px; */
+ 
+}
+
+.social-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  /* box-shadow: 5px 5px 10px #b8b8b8, -5px -5px 10px #ffffff; */
+}
+
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 8px 8px 16px #b8b8b8, -8px -8px 16px #ffffff;
+}
+
+.social-icon svg {
+  transition: all 0.3s ease;
+}
+
+/* GitHub specific styling */
+.github-icon:hover {
+  color: #333;
+  background: linear-gradient(145deg, #333, #555);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.github-icon:hover svg {
+  color: white;
+}
+
+/* Instagram specific styling */
+.instagram-icon:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+  box-shadow: 0 8px 20px rgba(225, 48, 108, 0.4);
+}
+
+/* X (Twitter) specific styling */
+.twitter-icon:hover {
+  background: linear-gradient(145deg, #000000, #333333);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Tooltip styling */
+.tooltip {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #333;
+}
+
+.social-icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  bottom: 60px;
+}
+
+/* Pulse animation for extra effect */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.social-icon:hover {
+  animation: pulse 1.5s infinite;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .social-links-contact {
+    gap: 15px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .tooltip {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
