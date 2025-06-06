@@ -3,6 +3,7 @@ import contents from "../data/contents";
 const faqData = contents.faqData;
 import AnimatedDots from "../components/AnimatedDots";
 import FaqItem from "../components/FaqItem";
+import "../styles/FaqSection.css";
 
 export default function FaQSection() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -13,38 +14,21 @@ export default function FaQSection() {
 
   return (
     <>
-      {/* FAQ Section */}
-
-      <section style={{ padding: "64px 16px", position: "relative" }}>
+      <section className="faq-section">
         <AnimatedDots />
-        <div
-          style={{
-            maxWidth: "1024px",
-            margin: "0 auto",
-            position: "relative",
-            zIndex: 10,
-          }}
-        >
-          <div style={{ textAlign: "center", marginBottom: "48px" }}>
-            <h2
-              style={{
-                fontSize: "clamp(32px, 4vw, 48px)",
-                fontWeight: "bold",
-                marginBottom: "16px",
-              }}
-            >
-              <span style={{ color: "#EF5DA8" }}>FREQUENTLY</span>{" "}
-              <span style={{ color: "white" }}>ASKED QUESTIONS</span>
+        <div className="faq-wrapper">
+          <div className="faq-header">
+            <h2 className="faq-title">
+              <span className="highlight">FREQUENTLY</span>{" "}
+              <span className="normal">ASKED QUESTIONS</span>
             </h2>
-            <p
-              style={{ fontSize: "18px", color: "#B0B0B0", lineHeight: "1.6" }}
-            >
+            <p className="faq-description">
               Find answers to common questions about our community and how to
               get involved.
             </p>
           </div>
 
-          <div style={{ width: "100%" }}>
+          <div className="faq-items">
             {faqData.map((faq, index) => (
               <FaqItem
                 key={index}

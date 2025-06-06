@@ -1,0 +1,83 @@
+.team-section {
+  width: 100%;
+  background-color: #0b0b0b;
+  color: white;
+}
+
+.team-section section {
+  padding: 64px 16px;
+  position: relative;
+}
+
+.team-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.team-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.team-heading h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.team-heading .highlight {
+  color: #ef5da8;
+}
+
+.team-heading .normal {
+  color: white;
+}
+
+.team-heading p {
+  font-size: 18px;
+  color: #b0b0b0;
+  max-width: 512px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.year-tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.year-tabs {
+  display: flex;
+  background-color: #121212;
+  border-radius: 8px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.year-button {
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #b0b0b0;
+  border: none;
+  cursor: pointer;
+}
+
+.year-button.active {
+  background-color: #ef5da8;
+  color: white;
+}
+
+.year-button:hover:not(.active) {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
