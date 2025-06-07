@@ -1,0 +1,21 @@
+/* Color Variables */
+:root {
+  /* Primary Colors */
+  --primary-gradient-start: #ff6b9d;
+  --primary-gradient-end: #c44569;
+  --primary-accent: #ff6b9d;
+  
+  /* Text Colors */
+  --text-white: #ffffff;
+  --text-light-gray: #e0e0e0;
+  --text-gray: #a0a0a0;
+  
+  /* Avatar Colors */
+  --avatar-gradient-start: #667eea;
+  --avatar-gradient-end: #764ba2;
+  --avatar-border: #ffffff;
+  
+  /* Interactive States */
+  --hover-brightness: 1.2;
+  --hover-scale: 1.05;
+}

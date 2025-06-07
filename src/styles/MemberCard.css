@@ -9,7 +9,7 @@
 }
 
 .member-card.hovered {
-  border: 1px solid #ef5da8;
+  border: 1px solid var(--primary-gradient-start);
   transform: scale(1.05);
 }
 

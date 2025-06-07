@@ -7,6 +7,7 @@ import FAQ from  "../assets/images/FAQ-logo.png";
 import event from   "../assets/images/event-logo.png"
 import explore from   "../assets/images/explore-logo.png"
 import about from   "../assets/images/about-logo.png"
+import home from "../assets/images/home-logo.png"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -57,22 +58,22 @@ const Navbar = () => {
           
           <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
             <Link to="/home" className='navpage' onClick={() => setMenuOpen(false)}>
-              <img src={about || "/placeholder.svg"} alt="" />
+              <img src={home} alt="" />
               Home
             </Link>
-            <Link to="/courses" className='navpage' onClick={() => setMenuOpen(false)}>
+            <Link to="/about" className='navpage' onClick={() => setMenuOpen(false)}>
               <img src={about || "/placeholder.svg"} alt="" />
               About
             </Link>
-            <Link to="/my-forks" className='navpage' onClick={() => setMenuOpen(false)}>
+            <Link to="/team" className='navpage' onClick={() => setMenuOpen(false)}>
               <img src={team || "/placeholder.svg"} alt="teams-logo" />
               Team
             </Link>
-            <Link to="/challenges" className='navpage' onClick={() => setMenuOpen(false)}>
+            <Link to="/events" className='navpage' onClick={() => setMenuOpen(false)}>
               <img src={event || "/placeholder.svg"} alt="" />
               Events
             </Link>
-            <Link to="/community" className='navpage' onClick={() => setMenuOpen(false)}>
+            <Link to="/FAQ" className='navpage' onClick={() => setMenuOpen(false)}>
               <img src={FAQ || "/placeholder.svg"} alt="" />
               FAQ
             </Link>

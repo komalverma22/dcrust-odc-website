@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Hero.css';  
 import Logo from '../components/logo';
 import StatsSection from '../components/StatsSection';
+import "../App.css"
 
 const Hero = () => {
   return (

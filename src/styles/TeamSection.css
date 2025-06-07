@@ -26,7 +26,7 @@
 }
 
 .team-heading .highlight {
-  color: #ef5da8;
+ color: var(--primary-gradient-start);
 }
 
 .team-heading .normal {
@@ -67,7 +67,7 @@
 }
 
 .year-button.active {
-  background-color: #ef5da8;
+    background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
   color: white;
 }
 
