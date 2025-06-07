@@ -89,16 +89,17 @@
 }
 
 .connect-button:hover {
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
+  background-color: white;
+  color: #0b0b0b;
+  font-weight: 500;
 }
 
 .connect-button img,
 .connect-button svg {
   height: 16px;
   width: 16px;
-  color: inherit;
-  fill: currentColor;
+  color:  #0b0b0b;
+  
 }
 
 /* Hamburger Menu Button */
