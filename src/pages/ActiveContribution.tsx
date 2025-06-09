@@ -19,6 +19,7 @@ const ActiveContributions = () => {
       logo: asyncLogo,
       alt: 'Asyncio Logo'
     },
+    
     {
       name: 'RedHat',
       logo: redHat,
